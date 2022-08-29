@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example</title>
+  </head>
+  <body>
+    <h1>私のホームページへようこそ</h1>
+    <img
+      src="./baby_music_piano_boy.png"
+      alt="赤ちゃんが座って笑顔でピアニカを弾いてる"
+    />
+    <button id="js-button">今日の占い</button>
+    <div aria-atomic="true" aria-live="assertive">
+      <p id="js-result">工事中のコンテンツです。</p>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document
+          .getElementById('js-button')
+          .addEventListener('click', function () {
+            document.getElementById('js-result').innerText = 'エラーです'
+          })
+      })
+    </script>
+  </body>
+</html>
